@@ -1,6 +1,7 @@
 # FileClientManager
 
 ## Install
+nuget package 
 ```nuget
 Install-Package FileClientManager -Version 1.0.0
 ```
