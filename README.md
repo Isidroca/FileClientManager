@@ -10,7 +10,7 @@ services.AddScoped<IFileClient, AzureFileShareClient>(client => {
 });
 ```
 
-# you api/mvc controller
+## you api/mvc controller
 ```c#
     private readonly IFileClient _fileClient;
     
@@ -19,7 +19,7 @@ services.AddScoped<IFileClient, AzureFileShareClient>(client => {
         _fileClient = fileClient;
     }
   ```  
-# by local file you don't not need azure connection string
+## by local file you don't not need azure connection string
 
 ```c#
 public async Task<IActionResult> UploadToAzureStore(IFormFile file) {
@@ -34,3 +34,6 @@ public async Task<IActionResult> UploadToAzureStore(IFormFile file) {
     }
  }
  ```
+ 
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
